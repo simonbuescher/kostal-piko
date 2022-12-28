@@ -1,0 +1,20 @@
+{
+  "config": {
+    "flow_title": "Kostal Piko Wechselrichter Integration",
+    "error": {
+      "general": "Fehler bei der Verbindung mit dem Piko Wechselrichter"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "host": "Host",
+          "username": "Benutzername",
+          "password": "Passwort"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Piko ist bereits eingerichtet."
+    }
+  }
+}

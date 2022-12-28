@@ -1,0 +1,11 @@
+{
+  "domain": "piko-homeassistant-integration",
+  "name": "Kostal Piko Solar Inverter",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/piko-homeassistant-integration",
+  "requirements": ["asyncio>=3.4.3", "lxml>=4.9.2"],
+  "codeowners": ["@simonbuescher"],
+  "iot_class": "local_polling",
+  "integration_type": "device",
+  "version": "1.0.0"
+}

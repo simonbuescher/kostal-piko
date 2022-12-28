@@ -1,0 +1,20 @@
+{
+  "config": {
+    "flow_title": "Kostal Piko Inverter Integration",
+    "error": {
+      "general": "Error while connection to Piko"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "host": "Host",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  }
+}
