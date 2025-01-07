@@ -1,7 +1,7 @@
 import collections
 
 from homeassistant.components.sensor import SensorEntityDescription, SensorDeviceClass, SensorStateClass
-from homeassistant.const import POWER_WATT, ENERGY_KILO_WATT_HOUR
+from homeassistant.const import UnitOfPower, UnitOfEnergy
 
 PikoInformationEntry = collections.namedtuple("InfoEntry", ["key", "xpath", "converter"])
 
@@ -48,21 +48,21 @@ SENSOR_TYPES = (
         device_class=SensorDeviceClass.POWER,
         key=PIKO_CURRENT_ENTRY.key,
         name="Piko Current Power",
-        native_unit_of_measurement=POWER_WATT,
+        native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
     ),
     SensorEntityDescription(
         device_class=SensorDeviceClass.ENERGY,
         key=PIKO_TODAY_ENTRY.key,
         name="Piko Generated Energy Today",
-        native_unit_of_measurement=ENERGY_KILO_WATT_HOUR,
+        native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
         state_class=SensorStateClass.TOTAL_INCREASING,
     ),
     SensorEntityDescription(
         device_class=SensorDeviceClass.ENERGY,
         key=PIKO_TOTAL_ENTRY.key,
         name="Piko Generated Energy Total",
-        native_unit_of_measurement=ENERGY_KILO_WATT_HOUR,
+        native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
         state_class=SensorStateClass.TOTAL_INCREASING,
     )
 )
